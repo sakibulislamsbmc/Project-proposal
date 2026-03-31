@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-3xl border border-white/40 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+  }
+  
+  .glass-dark {
+    @apply bg-black/60 backdrop-blur-3xl border border-white/10 shadow-2xl;
+  }
+
+  .ios-button-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 active:scale-[0.98] transition-all shadow-lg shadow-blue-500/25;
+  }
+
+  .ios-button-secondary {
+    @apply bg-blue-50 text-blue-600 hover:bg-blue-100 active:scale-[0.98] transition-all;
+  }
+}
